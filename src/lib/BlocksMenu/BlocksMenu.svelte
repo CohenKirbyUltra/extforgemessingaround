@@ -19,7 +19,7 @@
         let id = util.randomHex(16)
         let block = {
             fields: [
-                "block"
+                "block",
                 "block"
             ]
         }
