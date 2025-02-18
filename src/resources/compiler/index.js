@@ -94,6 +94,9 @@ class Compiler {
                 classRegistry.extensionInfo.menuIconURI = url;
             }
         }**/
+
+        const blocktype = window.blocks[id].fields[0].toUppercase();
+        
         classRegistry.extensionInfo.id = properties.id;
         classRegistry.extensionInfo.name = properties.name;
         classRegistry.extensionInfo.docsURI = properties.docsURI;
@@ -102,6 +105,7 @@ class Compiler {
             return {
                 opcode: `block_${id}`,
                 text: window.blocks[id].fields[0], //placeholder
+                blocktype: Scratch.BlockType.blocktype, //placeholder
             }
         })
 
