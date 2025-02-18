@@ -1,6 +1,6 @@
 # extforge
 
-A svelte-powered app to make extensions for PenguinMod with blockly
+A svelte-powered app to make extensions for PenguinMod with blockly 
 
 ## Developing
 
