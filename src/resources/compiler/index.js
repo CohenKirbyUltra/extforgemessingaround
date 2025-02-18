@@ -96,6 +96,7 @@ class Compiler {
         }**/
         classRegistry.extensionInfo.id = properties.id;
         classRegistry.extensionInfo.name = properties.name;
+        classRegistry.extensionInfo.docsURI = properties.docsURI;
         classRegistry.extensionInfo.color1 = properties.color;
         classRegistry.extensionInfo.blocks = Object.entries(window.blocks ?? {}).map(([id, block]) => {
             return {
