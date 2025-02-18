@@ -20,6 +20,7 @@
         let block = {
             fields: [
                 "block"
+                "block"
             ]
         }
         window.blocks[id] = block
@@ -39,6 +40,7 @@
     function tempEditBlock(id) {
         let block = window.blocks[id]
         block.fields[0] = prompt("temporary block name thing", "block")
+        block.fields[1] = prompt("temporary block type thing", "block")
 
         updateBlocks()
     }
