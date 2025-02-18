@@ -5,7 +5,8 @@
     export let properties = {
         name: "Extension",
         id: "extensionID",
-        color: "#0fbd8c"
+        color: "#0fbd8c",
+        docsURI: "https://cohenkirbyultra.github.io/extforgemessingaround/README.md"
     }
 
     function update() {
@@ -29,6 +30,7 @@
         <div class="vert equal">
             <span>ID: <input type="text" placeholder="extensionID" maxlength="20" bind:value={properties.id} on:blur={update}></span>
             <span>Color: <input type="color" bind:value={properties.color} on:blur={update}></span>
+            <span>DOC URL: <input type="text" bind:value={properties.docsURI} on:blur={update}></span>
         </div>
     </div>
     <slot {properties} />
