@@ -20,7 +20,7 @@
         let block = {
             fields: [
                 "block",
-                "block"
+                "BLOCK"
             ]
         }
         window.blocks[id] = block
