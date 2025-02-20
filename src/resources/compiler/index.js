@@ -95,7 +95,7 @@ class Compiler {
             }
         }**/
 
-        const blocktype = window.blocks[id].fields[0].toUppercase();
+        const blocktype = window.blocks[id].fields[0].toUpperCase();
         
         classRegistry.extensionInfo.id = properties.id;
         classRegistry.extensionInfo.name = properties.name;
