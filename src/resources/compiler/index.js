@@ -103,7 +103,7 @@ class Compiler {
             return {
                 opcode: `block_${id}`,
                 text: window.blocks[id].fields[0], //placeholder
-                blocktype: Scratch.BlockType.windows.blocks[id].fields[1].toUpperCase(); //placeholder
+                blocktype: Scratch.BlockType.windows.blocks[id].fields[1].toUpperCase(), //placeholder
             }
         })
 
