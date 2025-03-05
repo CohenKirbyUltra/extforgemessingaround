@@ -161,7 +161,7 @@ window.onclick = function(event) {
         display: flex;
         justify-content: flex-end;
         font-weight: bold;
-        transition: background-color:
+        transition: background 0.2s;
 }
 
 .dropbtn:hover, .dropbtn:focus {
