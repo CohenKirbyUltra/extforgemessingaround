@@ -96,11 +96,11 @@ window.onclick = function(event) {
             <div class="dropdown">
                 <button class="dropbtn" on:click={() => dropdown()}>Dropdown</button>
                 <div id="myDropdown" class="dropdown-content">
-                    <button on:click={() => tempEditType(id, 0)}>Block</a>
-                    <button on:click={() => tempEditType(id, 1)}>Reporter</a>
-                    <button on:click={() => tempEditType(id, 2)}>Boolean</a>
-                    <button on:click={() => tempEditType(id, 3)}>Conditional</a>
-                    <button on:click={() => tempEditType(id, 4)}>Loop</a>
+                    <button on:click={() => tempEditType(id, 0)}>Block</button>
+                    <button on:click={() => tempEditType(id, 1)}>Reporter</button>
+                    <button on:click={() => tempEditType(id, 2)}>Boolean</button>
+                    <button on:click={() => tempEditType(id, 3)}>Conditional</button>
+                    <button on:click={() => tempEditType(id, 4)}>Loop</button>
                 </div>
             </div>
             <div>
