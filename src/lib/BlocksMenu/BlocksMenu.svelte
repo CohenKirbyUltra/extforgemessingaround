@@ -96,11 +96,11 @@ window.onclick = function(event) {
             <div class="dropdown">
                 <button class="dropbtn" on:click={() => dropdown()}>Dropdown</button>
                 <div id="myDropdown" class="dropdown-content">
-                    <button on:click={() => tempEditType(id, 0)}>Block</button>
-                    <button on:click={() => tempEditType(id, 1)}>Reporter</button>
-                    <button on:click={() => tempEditType(id, 2)}>Boolean</button>
-                    <button on:click={() => tempEditType(id, 3)}>Conditional</button>
-                    <button on:click={() => tempEditType(id, 4)}>Loop</button>
+                    <button on:click={() => tempEditType(id, "0")}>Block</button>
+                    <button on:click={() => tempEditType(id, "1")}>Reporter</button>
+                    <button on:click={() => tempEditType(id, "2")}>Boolean</button>
+                    <button on:click={() => tempEditType(id, "3")}>Conditional</button>
+                    <button on:click={() => tempEditType(id, "4")}>Loop</button>
                 </div>
             </div>
             <div>
@@ -149,7 +149,7 @@ window.onclick = function(event) {
         font-weight: bold;
     }
 
-.dropbtn {
+    .dropbtn {
         appearance: none;
         border: none;
         background: #4bf;
@@ -162,40 +162,40 @@ window.onclick = function(event) {
         justify-content: flex-end;
         font-weight: bold;
         transition: background 0.2s;
-}
+    }
 
-.dropbtn:hover, .dropbtn:focus {
-  background: #3ae;
-}
+    .dropbtn:hover, .dropbtn:focus {
+        background: #3ae;
+    }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-    padding: 0.4rem 1rem;
-    border-radius: 0.2em;
-}
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        padding: 0.4rem 1rem;
+        border-radius: 0.2em;
+    }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  padding: 0.4rem 1rem;
-  border-radius: 0.2em;
-}
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        padding: 0.4rem 1rem;
+        border-radius: 0.2em;
+    }
 
-.dropdown-content a {
-  color: black;
-  padding: 0.4rem 1rem;
-  border-radius: 0.2em;
-  text-decoration: none;
-  display: block;
-}
+    .dropdown-content button {
+        color: black;
+        padding: 0.4rem 1rem;
+        border-radius: 0.2em;
+        text-decoration: none;
+        display: block;
+    }
 
-.dropdown a:hover {background-color: #ddd;}
+    .dropdown button:hover {background-color: #ddd;}
 
-.show {display: block;}
+    .show {display: block;}
 </style>
