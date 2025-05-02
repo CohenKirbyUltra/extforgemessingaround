@@ -152,6 +152,10 @@
         <block type="runtime_frameset" />
         <block type="runtime_frameget" />
     </category>
+    <category name="VM" colour="#cca">
+        <block type="vm_startbranch" />
+        <block type="vm_loopcounter" />
+    </category>
     <category name="Browser" colour="#9d5">
         <block type="script_evalb" />
         <block type="script_evalv" />
