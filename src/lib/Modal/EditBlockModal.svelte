@@ -136,6 +136,8 @@
                 <option value="command">Command</option>
                 <option value="reporter">Reporter</option>
                 <option value="Boolean">Boolean</option>
+                <option value="conditional">Conditional</option>
+                <option value="loop">Loop</option>
             </select>
         </div>
     </div>
