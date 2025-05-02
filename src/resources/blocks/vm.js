@@ -6,7 +6,7 @@ const categoryPrefix = 'vm_';
 const categoryColor = '#cca';
 
 function register() {
-    registerBlock(`${categoryPrefix}start`, {
+    registerBlock(`${categoryprefix}vmstart`, {
         message0: 'start project',
         args0: [],
         previousStatement: null,
@@ -17,7 +17,7 @@ function register() {
         const code = `Scratch.vm.greenFlag();`;
         return `${code}\n`;
     })
-    registerBlock(`${categoryPrefix}stop`, {
+    registerBlock(`${categoryprefix}vmstop`, {
         message0: 'stop project',
         args0: [],
         previousStatement: null,
@@ -29,7 +29,7 @@ function register() {
         return `${code}\n`;
     })
 
-    registerBlock(`${categoryPrefix}running`, {
+    registerBlock(`${categoryprefix}vmrunning`, {
         message0: 'project running?',
         args0: [],
         output: "Boolean",
@@ -40,7 +40,7 @@ function register() {
         return [`${code}`, 0];
     })
 
-    registerBlock(`${categoryPrefix}onstart`, {
+    registerBlock(`${categoryprefix}vmonstart`, {
         message0: 'when project started %1 %2',
         args0: [
             {
@@ -60,7 +60,7 @@ function register() {
         return `${code}\n`;
     })
 
-    registerBlock(`${categoryPrefix}onstop`, {
+    registerBlock(`${categoryprefix}vmonstop`, {
         message0: 'when project stopped %1 %2',
         args0: [
             {
@@ -80,7 +80,7 @@ function register() {
         return `${code}\n`;
     })
 
-    registerBlock(`${categoryPrefix}turboget`, {
+    registerBlock(`${categoryprefix}vmturboget`, {
         message0: 'turbo mode enabled?',
         args0: [],
         output: "Boolean",
@@ -90,7 +90,7 @@ function register() {
         const code = `Scratch.vm.runtime.turboMode`;
         return [`${code}`, 0];
     })
-    registerBlock(`${categoryPrefix}turboset`, {
+    registerBlock(`${categoryprefix}vmturboset`, {
         message0: 'set turbo mode to %1',
         args0: [
             {
@@ -109,7 +109,7 @@ function register() {
         return `${code}\n`;
     })
 
-    registerBlock(`${categoryPrefix}frameget`, {
+    registerBlock(`${categoryprefix}vmframeget`, {
         message0: 'frame rate',
         args0: [],
         output: "Number",
@@ -119,7 +119,7 @@ function register() {
         const code = `Scratch.vm.runtime.frameLoop.framerate`;
         return [`${code}`, 0];
     })
-    registerBlock(`${categoryPrefix}frameset`, {
+    registerBlock(`${categoryprefix}vmframeset`, {
         message0: 'set frame rate to %1',
         args0: [
             {
@@ -140,7 +140,7 @@ function register() {
         return `${code}\n`;
     })
 
-    registerBlock(`${categoryPrefix}timer`, {
+    registerBlock(`${categoryprefix}vmtimer`, {
         message0: 'seconds since started',
         args0: [],
         output: "Number",
