@@ -9,6 +9,7 @@ import registerLists from "./lists";
 import registerBlocks from "./blocks";
 
 import registerRuntime from "./runtime";
+import registerVM from "./vm";
 import registerScript from "./script";
 
 export default () => {
@@ -23,5 +24,6 @@ export default () => {
     registerBlocks();
 
     registerRuntime();
+    registerVM();
     registerScript();
 }
