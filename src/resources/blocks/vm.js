@@ -6,7 +6,7 @@ const categoryPrefix = 'vm_';
 const categoryColor = '#cca';
 
 function register() {
-    registerBlock(`${categoryPrefix}branchstart`, {
+    registerBlock(`${categoryPrefix}startbranch`, {
         message0: 'start breach %1',
         args0: [
             {
