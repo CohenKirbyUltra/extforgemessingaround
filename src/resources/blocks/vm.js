@@ -26,14 +26,22 @@ function register() {
         return `${code}\n`;
     })
 
-    registerBlock(`${categoryPrefix}loopcounter`, {
-        message0: 'loop index',
-        args0: [],
-        output: "Number",
+    registerBlock(`${categoryPrefix}stackframe`, {
+        message0: 'stack frame %1',
+        args0: [
+            {
+                "type": "field_input",
+                "name": "INPUT",
+                "check": null,
+                "text": "",
+                "acceptsBlocks": true
+            },
+        ],
+        output: "",
         inputsInline: true,
         colour: categoryColor
     }, (block) => {
-        const code = `util.stackFrame.loopCounter;`;
+        const code = `util.stackFrame;`;
         return [`${code}`, 0];
     })
 }
