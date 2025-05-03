@@ -152,7 +152,7 @@
         <block type="runtime_frameset" />
         <block type="runtime_frameget" />
     </category>
-    <category name="VM" colour="#cca">
+    <category name="VM" colour="#ff8">
         <block type="vm_startbranch" />
         <block type="vm_stackframe" />
     </category>
